@@ -25,6 +25,8 @@ int main(void) {
 		printf("open file error\n");
 		exit(1);
 	}
+	
+	printf("test git\r\n");
 
 	lock_set(fd, F_WRLCK);
 	write(fd, "filelock", strlen("filelock"));
